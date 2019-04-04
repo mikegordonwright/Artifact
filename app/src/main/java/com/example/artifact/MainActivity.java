@@ -1,7 +1,9 @@
 package com.example.artifact;
 
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
@@ -25,5 +27,56 @@ public class MainActivity extends AppCompatActivity {
         button5.findViewById(R.id.button5);
         button6.findViewById(R.id.button6);
 
+        setupListeners();
+
+        final MediaPlayer mp = MediaPlayer.create(this, );
     }
+
+
+
+    void setupListeners() {
+        button1.setOnClickListener(new Button.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        button2.setOnClickListener(new Button.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        button3.setOnClickListener(new Button.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        button4.setOnClickListener(new Button.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        button5.setOnClickListener(new Button.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        button6.setOnClickListener(new Button.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+    }
+
 }
