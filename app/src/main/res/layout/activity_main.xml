@@ -16,11 +16,7 @@
         android:textAlignment="viewStart"
         android:textAllCaps="true"
         android:textStyle="bold" />
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button" />
+
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -30,36 +26,47 @@
         android:layout_centerHorizontal="true">
 
 
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:text="Horn" />
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:padding="30dp"
+            android:text="Chime" />
 
         <Button
             android:id="@+id/button3"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:padding="30dp"
+            android:text="Bell" />
 
         <Button
             android:id="@+id/button4"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:padding="30dp"
+            android:text="Ping" />
 
         <Button
             android:id="@+id/button5"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:padding="30dp"
+            android:text="Long Beep" />
 
         <Button
             android:id="@+id/button6"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:padding="30dp"
+            android:text="Bark" />
     </LinearLayout>
 
 </RelativeLayout>

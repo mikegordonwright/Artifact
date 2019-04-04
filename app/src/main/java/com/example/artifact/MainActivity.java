@@ -34,15 +34,14 @@ public class MainActivity extends AppCompatActivity {
         button6 = findViewById(R.id.button6);
 
 
-        mp1 = MediaPlayer.create(this, R.raw.song);
-        mp2 = MediaPlayer.create(this, R.raw.song);
-        mp3 = MediaPlayer.create(this, R.raw.song);
-        mp4 = MediaPlayer.create(this, R.raw.song);
-        mp5 = MediaPlayer.create(this, R.raw.song);
-        mp6 = MediaPlayer.create(this, R.raw.song);
+        mp1 = MediaPlayer.create(this, R.raw.horn);
+        mp2 = MediaPlayer.create(this, R.raw.chime);
+        mp3 = MediaPlayer.create(this, R.raw.bell);
+        mp4 = MediaPlayer.create(this, R.raw.ping);
+        mp5 = MediaPlayer.create(this, R.raw.longbeep);
+        mp6 = MediaPlayer.create(this, R.raw.bark);
 
         setupListeners();
-        setupCompletionListeners();
 
     }
 
@@ -66,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         button3.setOnClickListener(new Button.OnClickListener(){
             @Override
             public void onClick(View v) {
-                mp3.start();
+                if (!mp1.isPlaying()) mp3.start();
             }
         });
 
@@ -93,50 +92,5 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
-    void setupCompletionListeners() {
-
-        mp1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mp) {
-                mp1.release();
-            }
-        });
-
-        mp2.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mp) {
-                mp1.release();
-            }
-        });
-
-        mp3.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mp) {
-                mp1.release();
-            }
-        });
-
-        mp4.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mp) {
-                mp1.release();
-            }
-        });
-
-        mp5.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mp) {
-                mp1.release();
-            }
-        });
-
-        mp5.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mp) {
-                mp1.release();
-            }
-        });
-    }
 
 }
