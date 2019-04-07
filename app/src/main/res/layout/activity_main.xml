@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:gravity="center">
+    android:background="#ffffff"
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
@@ -12,61 +13,75 @@
         android:layout_height="wrap_content"
         android:text="Press a Button to Honk"
         android:padding="20dp"
+        android:textSize="25sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
         android:layout_centerHorizontal="true"
-        android:textAlignment="viewStart"
         android:textAllCaps="true"
+        android:textColor="#0f0f0f"
         android:textStyle="bold" />
 
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/conLayout"
+        android:layout_width="match_parent"
+        android:layout_height="1080px"
         android:layout_below="@id/textView"
-        android:layout_centerHorizontal="true">
-
+        android:layout_marginTop="53dp"
+        android:background="@drawable/wheel"
+        tools:layout_editor_absoluteY="158dp">
 
         <Button
             android:id="@+id/button1"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="30dp"
-            android:text="Horn" />
+            android:layout_marginStart="27dp"
+            android:padding="0dp"
+            android:text="Horn"
+            app:layout_constraintBottom_toTopOf="@+id/button3"
+            app:layout_constraintStart_toStartOf="@+id/button3" />
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="30dp"
-            android:text="Chime" />
+            android:layout_marginStart="22dp"
+            android:layout_marginBottom="105dp"
+            android:text="Excuse Me"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/button3" />
 
         <Button
             android:id="@+id/button3"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="30dp"
-            android:text="Bell" />
+            android:layout_marginEnd="1dp"
+            android:text="Changing lanes"
+            app:layout_constraintBottom_toTopOf="@+id/button2"
+            app:layout_constraintEnd_toStartOf="@+id/button5"
+            app:layout_constraintStart_toEndOf="@+id/button4" />
 
         <Button
             android:id="@+id/button4"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="30dp"
-            android:text="Ping" />
+            android:layout_marginEnd="6dp"
+            android:text="Hello"
+            app:layout_constraintBaseline_toBaselineOf="@+id/button3"
+            app:layout_constraintEnd_toStartOf="@+id/button3"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/button5"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="30dp"
-            android:text="Long Beep" />
+            android:layout_marginEnd="5dp"
+            android:text="MOVE!"
+            app:layout_constraintBaseline_toBaselineOf="@+id/button3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/button3" />
 
-        <Button
-            android:id="@+id/button6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="30dp"
-            android:text="Bark" />
-    </LinearLayout>
-
+    </android.support.constraint.ConstraintLayout>
 </RelativeLayout>
