@@ -11,15 +11,16 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Press a Button to Honk"
-        android:padding="20dp"
-        android:textSize="25sp"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="10dp"
+        android:layout_alignParentEnd="true"
         android:layout_marginBottom="20dp"
-        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        android:text="Honk what you mean"
+        android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="#0f0f0f"
+        android:textSize="25sp"
         android:textStyle="bold" />
 
 
@@ -28,60 +29,86 @@
         android:layout_width="match_parent"
         android:layout_height="1080px"
         android:layout_below="@id/textView"
-        android:layout_marginTop="53dp"
+        android:layout_marginTop="21dp"
         android:background="@drawable/wheel"
-        tools:layout_editor_absoluteY="158dp">
+        tools:layout_editor_absoluteY="95dp">
 
         <Button
             android:id="@+id/button1"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="27dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:color/transparent"
             android:padding="0dp"
             android:text="Horn"
-            app:layout_constraintBottom_toTopOf="@+id/button3"
-            app:layout_constraintStart_toStartOf="@+id/button3" />
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/button5"
+            app:layout_constraintStart_toStartOf="@+id/button2"
+            app:layout_constraintTop_toBottomOf="@+id/button3" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="22dp"
-            android:layout_marginBottom="105dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="63dp"
+            android:background="@android:color/transparent"
             android:text="Excuse Me"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/button3" />
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/button4"
+            app:layout_constraintTop_toBottomOf="@+id/button3" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="1dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="157dp"
+            android:background="@android:color/transparent"
             android:text="Changing lanes"
-            app:layout_constraintBottom_toTopOf="@+id/button2"
-            app:layout_constraintEnd_toStartOf="@+id/button5"
-            app:layout_constraintStart_toEndOf="@+id/button4" />
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/button4"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/button4"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="6dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="9dp"
+            android:background="@android:color/transparent"
             android:text="Hello"
-            app:layout_constraintBaseline_toBaselineOf="@+id/button3"
-            app:layout_constraintEnd_toStartOf="@+id/button3"
-            app:layout_constraintHorizontal_chainStyle="packed"
-            app:layout_constraintStart_toStartOf="parent" />
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/button2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/button1" />
 
         <Button
             android:id="@+id/button5"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="5dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="28dp"
+            android:background="@android:color/transparent"
             android:text="MOVE!"
-            app:layout_constraintBaseline_toBaselineOf="@+id/button3"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/button2"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/button3" />
+            app:layout_constraintTop_toBottomOf="@+id/button3"
+            app:layout_constraintVertical_bias="1.0" />
 
     </android.support.constraint.ConstraintLayout>
 </RelativeLayout>

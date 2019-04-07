@@ -51,10 +51,10 @@ public class MainActivity extends AppCompatActivity {
 
 
         mp1 = MediaPlayer.create(this, R.raw.horn);
-        mp2 = MediaPlayer.create(this, R.raw.chime);
+        mp2 = MediaPlayer.create(this, R.raw.excuseme);
         mp3 = MediaPlayer.create(this, R.raw.bell);
-        mp4 = MediaPlayer.create(this, R.raw.ping);
-        mp5 = MediaPlayer.create(this, R.raw.longbeep);
+        mp4 = MediaPlayer.create(this, R.raw.hello);
+        mp5 = MediaPlayer.create(this, R.raw.chime);
 
         setupListeners();
 
