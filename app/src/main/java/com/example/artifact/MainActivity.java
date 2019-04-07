@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.Switch;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     protected MediaPlayer mp3;
     protected MediaPlayer mp4;
     protected MediaPlayer mp5;
+    protected Switch switch1;
     protected ConstraintLayout conLayout;
 
     @Override
@@ -42,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         conLayout.setLayoutParams(lp);
         lp.addRule(RelativeLayout.CENTER_IN_PARENT);
 
+        switch1 = findViewById(R.id.switch1);
 
         button1 = findViewById(R.id.button1);
         button2 = findViewById(R.id.button2);
@@ -97,6 +100,7 @@ public class MainActivity extends AppCompatActivity {
                 mp5.start();
             }
         });
+
 
     }
 
